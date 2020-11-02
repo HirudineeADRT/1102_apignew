@@ -1,0 +1,132 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "27f23754-cc8d-43ae-81f7-78980ed7c8fe": {
+        "id": "27f23754-cc8d-43ae-81f7-78980ed7c8fe",
+        "parent": null,
+        "name": "1102_APIGnew.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "1102_APIGnew.js",
+        "cursor": {
+          "lineNumber": 11,
+          "column": 14
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "1102APIGnew"
+        },
+        "triggers": [
+          {
+            "resourceName": "apighiruaccountapitesthiruget",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1604309978754,
+        "testCases": {
+          "c2cc002e-5b38-4db3-af49-fbf41fec3574": {
+            "id": "c2cc002e-5b38-4db3-af49-fbf41fec3574",
+            "name": "Test event",
+            "functionId": "27f23754-cc8d-43ae-81f7-78980ed7c8fe",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "27f23754-cc8d-43ae-81f7-78980ed7c8fe"
+    ],
+    "currentFileId": "27f23754-cc8d-43ae-81f7-78980ed7c8fe",
+    "resources": {
+      "apighiruaccountapitesthiruget": {
+        "name": "apighiruaccountapitesthiruget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "hiruaccountapi",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "test/hiru",
+          "resourcePath": "/test/hiru",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test",
+          "mode": 0
+        }
+      },
+      "ddbhirutestddb": {
+        "name": "ddbhirutestddb",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 0,
+          "table": {
+            "arn": "",
+            "name": "hirutestddb",
+            "partitionKey": "id",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.5",
+    "projectName": "1102_APIGnew",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1604309983454
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "1102_apignew",
+      "url": "https://github.com/HirudineeADRT/1102_apignew"
+    }
+  }
+}
